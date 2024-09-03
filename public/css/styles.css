@@ -1,0 +1,156 @@
+/* Home Section Styling */
+#home {
+    background: url('../images/trre-front.jpg') no-repeat center center; /* Set the background image */
+    background-size: cover; /* Ensure the image covers the entire section */
+    height: 80vh; /* Set the height to fill the viewport height */
+    display: flex; /* Use flexbox for easy centering of content */
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    position: relative; /* Enable positioning for potential child elements */
+}
+
+#home .container {
+    background: rgba(0, 0, 0, 0.5); /* Optional: Dark overlay for better text readability */
+    padding: 50px; /* Padding inside the container for spacing */
+    border-radius: 10px; /* Rounded corners for the container */
+    color: #fff; /* Ensuring the text color is white for contrast */
+    max-width: 80%; /* Optional: Limit the width of the container */
+    text-align: center; /* Center the text inside the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Optional: Add some shadow for depth */
+}
+body {
+    background-color: blue;
+}
+
+/* carousel slide */
+
+.custom-height {
+    height: 670px; /* Default height for large screens */
+    object-fit: cover; /* Ensures images maintain aspect ratio and fill the container */
+  }
+
+/* Medium screens (tablets and small laptops, 768px and up) */
+@media (max-width: 1024px) {
+  .custom-height {
+      height: 600px; /* Adjust height for tablets and small laptops */
+  }
+}
+
+/* Small screens (phones and very small tablets, less than 768px) */
+@media (max-width: 768px) {
+  .custom-height {
+      height: 400px; /* Adjust height for smaller tablets and larger phones */
+  }
+}
+
+/* Extra small screens (phones, less than 576px) */
+@media (max-width: 576px) {
+  .custom-height {
+      height: 300px; /* Adjust height for phones */
+  }
+}
+
+
+/* services-section*/
+
+.container-custom {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.parent-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f8f9fa;
+}
+
+.child-div {
+  background-color: #e9ecef;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 10px;
+  flex: 0 0 calc(33.33% - 20px);
+}
+
+.child-div button {
+  border-radius: 20px;
+  font-size: 1rem;
+  padding: 10px 20px;
+  margin-top: 10px;
+  width: 100%; /* Ensure button takes full width */
+}
+
+.child-div p {
+  margin-top: 10px;
+  text-align: center;
+  width: 100%; /* Ensure paragraph takes full width */
+}
+
+@media (max-width: 992px) {
+  .child-div {
+      flex: 0 0 calc(50% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .parent-div {
+      height: auto;
+  }
+
+  .child-div {
+      flex: 0 0 calc(100% - 20px);
+      height: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .child-div {
+      flex: 0 0 calc(100% - 10px);
+      height: auto;
+  }
+}
+
+/* services-section*/
+
+
+
+/* sign  up*/
+
+
+.card-registration .select-input.form-control[readonly]:not([disabled]) {
+font-size: 1rem;
+line-height: 2.15;
+padding-left: .75em;
+padding-right: .75em;
+}
+.card-registration .select-arrow {
+top: 13px;
+}
+
+
+
+/* sign  up*/
+
+
+
+/* product */
+
+.container-custom {
+  margin-bottom: 20px;
+}
+
+.img-custom {
+  width: 75px;
+  height: 75px;
+  object-fit: cover;
+}
+
+/* product */
