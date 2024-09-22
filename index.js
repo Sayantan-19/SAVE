@@ -5,7 +5,7 @@ const session = require("express-session");
 const { on } = require("events");
 const { error } = require("console");
 const path = require('path'); 
-
+const axios = require('axios');
 
 const app = express();
 
@@ -37,7 +37,11 @@ app.get('/sign-up', (req, res) => {
 });
 
 app.get('/product', (req, res) => {
-    res.render('product');
+    // Hardcoded data
+    const data = { name: "axios done" };
+
+    // Render the product page and pass the data
+    res.render('product', { data });
 });
 
 
